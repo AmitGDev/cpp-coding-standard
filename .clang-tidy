@@ -186,8 +186,8 @@ CheckOptions:
   - key: readability-identifier-naming.NamespaceCase
     value: lower_case
 
-# Check all headers (portable across projects, filters system headers automatically)
-HeaderFilterRegex: '.*'
+# Only check headers under own "src" tree.
+HeaderFilterRegex: '.*[/\\]src[/\\].*'
 
 # Treat all warnings as errors in CI
 WarningsAsErrors: '*'
